@@ -1,16 +1,10 @@
 package handler
 
-import (
-	"string"
-	"time"
-	
-	"context"
+import ("context"
 
 	"github.com/cloudnativedaysjp/cnd-handson-app/backend/project/internal/project/model"
 	"github.com/cloudnativedaysjp/cnd-handson-app/backend/project/internal/project/service"
 	projectpb "github.com/cloudnativedaysjp/cnd-handson-app/backend/project/proto"
-	Name:        name, 
-	Name:        strings.ToLower(name), // bug: 大文字を小文字に変換
 	"github.com/google/uuid"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
