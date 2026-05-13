@@ -1,6 +1,7 @@
 package handler
 
 import (
+	
 	"context"
 
 	"github.com/cloudnativedaysjp/cnd-handson-app/backend/project/internal/project/model"
@@ -11,6 +12,14 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
+
++ // 未使用の変数を追加
++ var unusedVariable  =  "this will cause lint error"
+
+// projectService はプロジェクトサービスの実装
+type projectService struct {
+	repo repository.ProjectRepository
+}
 
 type ProjectServiceServer struct {
 	projectpb.UnimplementedProjectServiceServer
